@@ -19,9 +19,9 @@ void IntNode_Create(IntNode* thisNode, int dataInit, IntNode* nextLoc) {
 void IntNode_InsertAfter(IntNode* thisNode, IntNode* newNode) {
    IntNode* tmpNext = NULL;
 
-   tmpNext = thisNode->nextNodePtr; // Remember next
-   thisNode->nextNodePtr = newNode; // this -- new -- ?
-   newNode->nextNodePtr = tmpNext;  // this -- new -- next
+   tmpNext = thisNode->nextNodePtr;
+   thisNode->nextNodePtr = newNode; 
+   newNode->nextNodePtr = tmpNext;  
 }
 
 // Grab location pointed by nextNodePtr
